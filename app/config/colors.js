@@ -1,0 +1,16 @@
+export default {
+  primary: "#001489",
+  secondary: "#fd7e14",
+  info: "#A8BFFE",
+  white: "#fff",
+  black: "#000",
+  darkWhite: "#dbdada",
+  secondBlue: "#219DDE",
+  orangeLight: "#f6a25c",
+  gray: "#6c757d",
+  red: "#dc3545",
+  appbackground: "#272626",
+  appdark: "#454444",
+  green: "#02B450",
+  yellow: "#E5F220",
+};
