@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "pruebasTFG",
+    "slug": "pruebasTFG",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./app/assets/iconoApp.png",
+    "splash": {
+      "image": "./app/assets/splash2.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#272626"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./app/assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./app/assets/favicon.png"
+    },
+    "description": "26/01/2022 v3.0.0"
+  }
+}
