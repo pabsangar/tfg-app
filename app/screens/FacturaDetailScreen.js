@@ -24,7 +24,7 @@ function FacturaDetailScreen({ route }) {
 
     const pdf = response.data;
     if (pdf != null) {
-      Alert.alert("PDF Recibido", "", [{ text: "Aceptar" }]);
+      Alert.alert("Factura " + num_factura, pdf, [{ text: "Aceptar" }]);
     }
   };
 
