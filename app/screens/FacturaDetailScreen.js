@@ -1,5 +1,11 @@
 import React, { useContext } from "react";
-import { View, StyleSheet, Text, TouchableOpacity, Alert } from "react-native";
+import {
+  View,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  Linking,
+} from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 import Screen from "../components/Screen";
@@ -21,11 +27,11 @@ function FacturaDetailScreen({ route }) {
       num_factura,
       fecha
     );
+    //Obtenemos la url de la factura solicitada
+    const uri = response.data?.factura;
 
-    const pdf = response.data;
-    if (pdf != null) {
-      Alert.alert("Factura " + num_factura, pdf, [{ text: "Aceptar" }]);
-    }
+    //Abrimos el pdf en el navegador para poder descargarlo
+    Linking.openURL(uri);
   };
 
   return (
@@ -46,7 +52,7 @@ function FacturaDetailScreen({ route }) {
         </Text>
       </View>
       <TouchableOpacity style={styles.downloadPDF} onPress={downloadPDF}>
-        <Text style={styles.textPDF}>Descargar PDF</Text>
+        <Text style={styles.textPDF}>Ver / Descargar PDF</Text>
         <MaterialCommunityIcons
           name="download-circle-outline"
           size={40}
@@ -88,7 +94,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: colors.appdark,
-    borderRadius: 5,
+    borderRadius: 50,
     paddingBottom: 10,
   },
   textPDF: {
