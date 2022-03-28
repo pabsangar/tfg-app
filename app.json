@@ -23,11 +23,13 @@
       "adaptiveIcon": {
         "foregroundImage": "./app/assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.pablosangar.appConsumo",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./app/assets/favicon.png"
     },
-    "description": "26/01/2022 v3.0.0"
+    "description": "28/03/2022 v3.0.0"
   }
 }
